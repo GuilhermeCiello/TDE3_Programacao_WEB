@@ -1,7 +1,7 @@
 * {
     margin: 0;
     padding: 0;
-    font-family: Arial, Helvetica, sans-serif;
+   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .wrapper {
@@ -23,7 +23,7 @@
 
 .header_index {
     grid-area: header;
-    background-color: rgb(45, 73, 45);
+    background-color: rgb(95, 8, 8);
     color: white;
     padding: 20px;
     display: flex;
@@ -60,14 +60,14 @@ a#link_form {
 
 
 a#link_form:hover {
-    color: green;
+    color:rgb(241, 27, 27);
     background-color: white;
 }
     
 
 .main_index {
     grid-area: main;
-    background-color: rgb(7, 195, 7);
+    background-color: rgb(241, 27, 27);
     color: white;
     padding: 10%;
     display: flex;
@@ -80,7 +80,7 @@ a#link_form:hover {
 
 .article_index {
     grid-area: article;
-    background-color: rgb(152, 225, 152);
+    background-color: rgb(242, 124, 124);
     padding: 20px;
     color: white;
     border-radius: 2%;
@@ -99,7 +99,7 @@ a#link_form:hover {
 }
 
 .pokemon {
-    background-color: rgb(176, 253, 176); 
+    background-color: rgb(48, 1, 1); 
     padding: 5%;
     border: 1px solid rgb(255,255,255);
     border-radius: 5%;
@@ -118,15 +118,10 @@ a#link_form:hover {
     border-radius: 5%;
 }
 
-.animal > p {
-    margin-top: 1%;
-    font-weight: bold;
-    font-family: 0.8em;
 
-}
 .footer_index {
     grid-area: footer;
-    background-color: rgb(45, 73, 45);
+    background-color: rgb(95, 8, 8);
     color: white;
     padding: 20px;
     display: flex;
@@ -153,16 +148,44 @@ footer > p {
 }
 
 .pokemon_body{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
     height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
+    background-image: linear-gradient(to left, blue, orangered, yellow);
+    background-size: 500% 100%;
+    animation: degrade 5s infinite alternate;
+
+}
+
+@keyframes degrade{
+    0%{
+        background-position-x: 0%;
+
+    }100%{
+        background-position-x: 100%;
+    }
 }
 
 #container {
     text-align: center;
-    background-color: #f0f0f0;
-    padding: 20px;
-    border-radius: 5px;
-    margin-top: 20%;
+    padding: 3%;
+    border: 1px solid rgb(255,255,255);
+    border-radius: 5%;
+    margin-top: 12%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
 }
+
+#btn{
+    margin-top: 10%;
+    font-weight: bold;
+    border: none;
+    padding: 10px;
+    width: 100%;
+    border-radius: 5px;
+}
+

@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', () => {
     function pokemon() {
-        let randomPokemonId = Math.floor(Math.random() * 100) + 1;
+        let randomPokemonId = Math.floor(Math.random() * 1000) + 1;
         let url = `https://pokeapi.co/api/v2/pokemon/${randomPokemonId}/`;
         
         fetch(url)
